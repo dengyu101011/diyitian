@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>滴滴工程</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.css">
+		<!--App自定义的css-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css"/>-->
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1578337_v82c35ojp3.css"  />
+		<style>
+			<script type="text/javascript" charset="utf-8">
+						mui.init();
+					</script>
+		</style>
+		<style>
+					.mui-bar-tab .mui-tab-item.mui-active {
+						color: orange;
+					}
+					
+				</style>
+	</head>
+	<body>
+		
+		<a>这是咨讯界面</a>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " href="../two.html">
+				<div class="iconfont icon-dianying1"></div>
+				<div class="mui-tab-label">电影</div>
+			</a>
+			<a class="mui-tab-item " href="yingyuan.html">
+				<div class="iconfont icon-yingyuan1"></div>
+				<div class="mui-tab-label">影院</div>
+			</a>
+			<a class="mui-tab-item mui-active">
+				<div class="iconfont icon-zixun"></div>
+				<div class="mui-tab-label">咨讯</div>
+			</a>
+			<a class="mui-tab-item" href="wode.html">
+				<div class="iconfont icon-wode1"></div>
+				<div class="mui-tab-label">我的</div>
+			</a>
+		</nav>
+	</body>
+	<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			// mui中屏蔽了点击事件，下面的代码表示不让它屏蔽点击事件
+			mui("body").on("tap","a",function(){
+				document.location.href = this.href;
+			})
+		</script>
+	
+
+</html>
